@@ -1,1 +1,118 @@
-1
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111" />
+
+
+
+  
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+  <title>CodePen - Copy to Clipboard animation</title>
+
+    <link rel="canonical" href="https://codepen.io/nataliarsand/pen/prjzWG">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://fontawesome.io/assets/font-awesome/css/font-awesome.css'>
+  
+<style>
+.container {
+	width: 400px;
+	margin: 60px auto;
+}
+
+.link {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	color: #07C;
+	font-size: 18px;
+	border: 1px dashed #07C;
+	border-radius: 3px;
+	cursor: pointer;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.link:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+		background: #07C;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 100% 50%;
+    transform-origin: 100% 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+.link.copied, .link.copied:hover, .link.copied:before {
+	color: #FFF;
+	-webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.link:hover {
+	color: #1A9EFB;
+	border-color: #1A9EFB;
+}
+
+.link:after {
+	content: '\f24d';
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: 20px;
+	padding-left: 20px;
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+</head>
+
+<body translate="no">
+  <div class="container">
+	<div class="link">https://link.com/s/nat230959</div>
+</div>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+      <script id="rendered-js" >
+var $el = $('div.link');
+
+$el.click(function () {
+  $el.addClass('copied');
+  $el.html('Copied to Clipboard!');
+
+  setTimeout(function () {
+    $el.removeClass('copied');
+    $el.html('https://link.com/s/nat230959');
+  }, 1000);
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+</body>
+
+</html>
