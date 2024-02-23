@@ -1,89 +1,112 @@
-آموزش کار با نرم‌افزار Streisand
-این نرم افزار یکی از اپ‌های رایگان برای iOS است که iOSهای نسخه 14 به بعد قابل نصب است.
-
-دانلود اپلیکیشن
-برای نصب اپلیکیشن می توان از اینجا آن را دانلود و نصب نمود.
-
-افزودن لینک سابسکریپشن
-برای این کار ۲ راه وجود دارد.
-
-کپی کردن لینک سابسکریپشن
-برای این کار به پنل کاربری خود بروید و در قسمت تمام کانفیگ‌ها، بخش مربوط به auto را باز نمایید.
-
-حالا می‌توانید QR code را کپی کنید.
-
-وارد نرم‌افزار شوید و دکمه + را بزنید.
-
-سپس سابسکریپشن به نرم‌افزار اضافه می‌گردد و کانفیگ‌ها لود می‌شوند.
-اسکن کردن لینک سابسکریپشن
-می‌توان به جای کپی لینک سابسکریپشن، QR code را اسکن نمود.
-
-در نرم‌افزار دکمه + را بزنید و گزینه Scan QRCode را بزنید و QR code را اسکن نمایید.
-
-سپس سابسکریپشن به نرم‌افزار اضافه می‌گردد و کانفیگ‌ها لود می‌شوند.
-تنظیمات Subscription
-برای این کار روی سابسکریپشن اضافه شده به نرم‌افزار تپ کنید و نگه دارید. گزینه‌های زیر ظاهر می‌شوند.
-
-
-Latency
-میزان تاخیر مربوط به کانفیگ‌ها را محاسبه می‌کند.
-
-TCP Ping
-از کانفیگ‌ها تست پینگ TCP می‌گیرد.
-
-ICMP Ping
-از کانفیگ‌ها تست پیننگ معمولی می‌گیرد.
-
-نکته: تفاوت تست پینگ معمولی و پینگ TCP در نوع پروتکل استفاده شده می‌باشد.
-
-Update
-برای آپدیت کردن سابسکریپشن از این گزینه استفاده نمایید.
-
-Edit
-جهت ویرایش لینک سابسکریپشن از این گزینه استفاده نمایید.
-
-Delete
-برای حذف سابسکریپشن از این گزینه استفاده نمایید.
-
-DNS Settings
-در صفحه اصلی نرم‌افزار تنظیمات مربوط به DNS قرار دارد که با ورود به آن می‌توانید آن را تنظیم نمایید و سرور و نوع پروتکل استفاده شده را تغییر دهید.
-
-
-DoH
-پروتکلی است که DNS را بر بستر HTTPS ارائه می‌دهد. یعنی درخواست‌های DNS در قالب وب ارسال می‌گردد.
-
-DoT
-در این پروتکل درخواست‌های DNS بر اساس پروتکل TCP ارسال می‌گردد.
-
-DoU
-در این پروتکل درخواست‌های DNS بر اساس پروتکل UDP ارسال می‌گردد.
-
-Settings
-در این صفحه تنظیمات کلی نرم‌افزار قرار دارد که در ادامه توضیح داده خواهند شد.
-
-
-Import Configuration
-برای افزودن فایل کانفیگ‌ها از دستگاه به صورت دستی از این گزینه استفاده نمایید.
-
-Export Configuration
-برای انتقال کانفیگ ایمپورت شده از دستگاه به دستگاهی دیگر از این گزینه می‌توان استفاده نمود.
-
-Subscription
-با فعال کردن گزینه Update On Open ، هنگام باز شدن نرم‌افزار به صورت خودکار سابسکریپشن آپدیت می‌گردد.
-
-
-Reset
-در این بخش می‌توانید تنظیمات مربوط به اپلیکیشن را ریست نمایید.
-
-
-فعال‌سازی فرگمنت
-برای فعال‌سازی فرگمنت روی کانکشن‌های TLS می‌بایست در این نرم‌افزار روی کانکشن بزنید و گزینه Fragment را فعال کنید. پارامترهای زیر برای تعیین در فیلدهای مربوطه پیشنهاد می‌شود.
-
-
-packets: tlshello
-
-length : 100-200
-
-interval : 10-20
-
-بسته به اپراتور ممکن است نیاز باشد پارمترها را تغییر دهید یا نوع پکت‌ها را از tlshello به حالت tcp segment 1-3 تغییر دهید. البته این حالت ممکن است زودتر شناسایی شود. packets: 1-3
+<div class="markdown-body">
+                <p><a href="https://github.com/hiddify/hiddify-config/wiki/Tutorial-for-Streisand"><strong>🇺🇸 English</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/hiddify/hiddify-config/wiki/%D9%87%D9%85%D9%87-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%E2%80%8C%D9%87%D8%A7-%D9%88-%D9%88%DB%8C%D8%AF%D8%A6%D9%88%D9%87%D8%A7"><img width="100" src="https://private-user-images.githubusercontent.com/125398461/238764224-3704cd84-eee6-4c45-abe7-3c02936bbebb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjM4NzY0MjI0LTM3MDRjZDg0LWVlZTYtNGM0NS1hYmU3LTNjMDI5MzZiYmViYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZGVmYzM3NGI5ZGMwMWFhMzU2MjNjNjUyZjllOTY4ZThlZDA2MDExYzlmY2VlMjNiOWEyZDNkYTBhZWQ5NDBjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.BnYbetV9KSn7TYSUrEYO9IMajec95_Ji65GeApWIrpo" content-type-secured-asset="image/png" secured-asset-link=""></a></p>
+<div dir="rtl">
+<h1><a id="user-content-آموزش-کار-با-نرمافزار-streisand" class="anchor" aria-hidden="true" tabindex="-1" href="#آموزش-کار-با-نرمافزار-streisand"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>آموزش کار با نرم‌افزار Streisand</h1>
+<p>این نرم افزار یکی از اپ‌های رایگان برای iOS است که iOSهای نسخه 14 به بعد قابل نصب است.</p>
+<h2><a id="user-content-دانلود-اپلیکیشن" class="anchor" aria-hidden="true" tabindex="-1" href="#دانلود-اپلیکیشن"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>دانلود اپلیکیشن</h2>
+<p>برای نصب اپلیکیشن می توان از <a href="https://apps.apple.com/us/app/streisand/id6450534064" rel="nofollow">اینجا</a> آن را دانلود و نصب نمود.</p>
+<h2><a id="user-content-افزودن-لینک-سابسکریپشن" class="anchor" aria-hidden="true" tabindex="-1" href="#افزودن-لینک-سابسکریپشن"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>افزودن لینک سابسکریپشن</h2>
+<p>برای این کار ۲ راه وجود دارد.</p>
+<h3><a id="user-content-کپی-کردن-لینک-سابسکریپشن" class="anchor" aria-hidden="true" tabindex="-1" href="#کپی-کردن-لینک-سابسکریپشن"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>کپی کردن لینک سابسکریپشن</h3>
+<ul>
+<li>برای این کار به پنل کاربری خود بروید و در قسمت <code>تمام کانفیگ‌ها</code>، بخش مربوط به <code>auto</code> را باز نمایید.</li>
+</ul>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260380722-5fb09864-81c6-4665-b75c-01988fb7fa81.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwMzgwNzIyLTVmYjA5ODY0LTgxYzYtNDY2NS1iNzVjLTAxOTg4ZmI3ZmE4MS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZjIwYzBmYWY3MzUxMjI1YTE1ZmJkZDIxMzVhYzAyYzJhMzJmYmNmOGJjY2E3ZjZjMDEwYTQxMGI0ZTE3Y2NlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.-NnyDgqk4PxgUF0WunjlO9sgC_Z9xckyS7jTCWka6js" content-type-secured-asset="image/jpeg">
+</div>
+<ul>
+<li>حالا می‌توانید QR code را <code>کپی</code> کنید.</li>
+</ul>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260376620-b8a76e41-4db4-45ac-be27-856f6ec9182e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwMzc2NjIwLWI4YTc2ZTQxLTRkYjQtNDVhYy1iZTI3LTg1NmY2ZWM5MTgyZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZGYwN2RhNmFhNDlkYzEyZmI5MmU5YjIyZTlkZGU2Yjk1YTk2OTUxYTgwZWUzNWEwMzk5Y2VmOTAzZDVjNWM5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.boTo-0v968-Wainz_UTS2AJ50Jaruejin_Mubrrsiv8" content-type-secured-asset="image/jpeg">
+</div>
+<ul>
+<li>وارد نرم‌افزار شوید و دکمه <code>+</code> را بزنید.</li>
+</ul>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260377494-78fe4b65-d7f7-4d16-b185-82f8dd67a135.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwMzc3NDk0LTc4ZmU0YjY1LWQ3ZjctNGQxNi1iMTg1LTgyZjhkZDY3YTEzNS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lZTJlOWMzMTEwNmYyMDY3NDA3ODQ4YzY5NjI1MmVkOGUzODAyZjQwM2UwMTFjMzgzZWVjYTRjZTU3Y2E3MTE5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.TlYEKReeBKXykhf3OYXPTpbyfEBGFyXlaw8s4mHYNJs" content-type-secured-asset="image/jpeg">
+</div>
+<ul>
+<li>سپس سابسکریپشن به نرم‌افزار اضافه می‌گردد و کانفیگ‌ها لود می‌شوند.</li>
+</ul>
+<h3><a id="user-content-اسکن-کردن-لینک-سابسکریپشن" class="anchor" aria-hidden="true" tabindex="-1" href="#اسکن-کردن-لینک-سابسکریپشن"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>اسکن کردن لینک سابسکریپشن</h3>
+<ul>
+<li>می‌توان به جای کپی لینک سابسکریپشن، QR code را اسکن نمود.</li>
+</ul>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260437012-fe4de484-3136-4531-8292-c961e26d838e.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDM3MDEyLWZlNGRlNDg0LTMxMzYtNDUzMS04MjkyLWM5NjFlMjZkODM4ZS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lNmQ3ZmJlYzE3NWRjYTNjNDg4NWZkZGFhMTEyOWI1YmFhNWJlYWFjN2VmNTc2NDRkMGJhOTQ3YjA4N2I4YzgwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.MkGpS2wVwoW7pGFfN8FURtsn3Vfs2PkgX_vxeNA1290" content-type-secured-asset="image/jpeg">
+</div>
+<ul>
+<li>در نرم‌افزار دکمه <code>+</code> را بزنید و گزینه <code>Scan QRCode</code> را بزنید و QR code را اسکن نمایید.</li>
+</ul>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260436631-58c97e17-3cfa-4c40-9b2d-01de70b1e40d.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDM2NjMxLTU4Yzk3ZTE3LTNjZmEtNGM0MC05YjJkLTAxZGU3MGIxZTQwZC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0xODRjNGEyY2NmY2MwMTVlM2ZmOWRlNjllM2Y0N2U3ZjBkODMwZTI3YmM2ZmM0N2E5Yzk3ZDU3OWVmODZjODdlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Z9ulJ6HKglGbinBndIKaEm4HfoUwdOv0rBc1HntdTRE" content-type-secured-asset="image/jpeg">
+</div>
+<ul>
+<li>سپس سابسکریپشن به نرم‌افزار اضافه می‌گردد و کانفیگ‌ها لود می‌شوند.</li>
+</ul>
+<h2><a id="user-content-تنظیمات-subscription" class="anchor" aria-hidden="true" tabindex="-1" href="#تنظیمات-subscription"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>تنظیمات Subscription</h2>
+<p>برای این کار روی سابسکریپشن اضافه شده به نرم‌افزار تپ کنید و نگه دارید. گزینه‌های زیر ظاهر می‌شوند.</p>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260441401-52954cdf-5c76-4fbe-8adb-8371d7fa6747.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDQxNDAxLTUyOTU0Y2RmLTVjNzYtNGZiZS04YWRiLTgzNzFkN2ZhNjc0Ny5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMTQwNzU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZWE4ZmJhNTJkYzQwODkxMmE4MDM2MDkxYThkZjZiMGE0ZmZlZDI0NWJiM2Y0MjJkMzlhMjA2Y2U1N2VjYWQwZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.31l9AFXPebXcQmdFYlfIlw0F8eGjgc2eLBYbkuxmv4k" content-type-secured-asset="image/jpeg">
+</div>
+<h3><a id="user-content-latency" class="anchor" aria-hidden="true" tabindex="-1" href="#latency"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Latency</h3>
+<p>میزان تاخیر مربوط به کانفیگ‌ها را محاسبه می‌کند.</p>
+<h3><a id="user-content-tcp-ping" class="anchor" aria-hidden="true" tabindex="-1" href="#tcp-ping"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>TCP Ping</h3>
+<p>از کانفیگ‌ها تست پینگ TCP می‌گیرد.</p>
+<h3><a id="user-content-icmp-ping" class="anchor" aria-hidden="true" tabindex="-1" href="#icmp-ping"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>ICMP Ping</h3>
+<p>از کانفیگ‌ها تست پیننگ معمولی می‌گیرد.</p>
+<blockquote>
+<p>نکته: تفاوت تست پینگ معمولی و پینگ TCP در نوع پروتکل استفاده شده می‌باشد.</p>
+</blockquote>
+<h3><a id="user-content-update" class="anchor" aria-hidden="true" tabindex="-1" href="#update"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Update</h3>
+<p>برای آپدیت کردن سابسکریپشن از این گزینه استفاده نمایید.</p>
+<h3><a id="user-content-edit" class="anchor" aria-hidden="true" tabindex="-1" href="#edit"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Edit</h3>
+<p>جهت ویرایش لینک سابسکریپشن از این گزینه استفاده نمایید.</p>
+<h3><a id="user-content-delete" class="anchor" aria-hidden="true" tabindex="-1" href="#delete"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Delete</h3>
+<p>برای حذف سابسکریپشن از این گزینه استفاده نمایید.</p>
+<h2><a id="user-content-dns-settings" class="anchor" aria-hidden="true" tabindex="-1" href="#dns-settings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>DNS Settings</h2>
+<p>در صفحه اصلی نرم‌افزار تنظیمات مربوط به DNS قرار دارد که با ورود به آن می‌توانید آن را تنظیم نمایید و سرور و نوع پروتکل استفاده شده را تغییر دهید.</p>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260462369-152bbbd5-a8a5-4a31-836a-7c2ea7ab3940.jpeg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDYyMzY5LTE1MmJiYmQ1LWE4YTUtNGEzMS04MzZhLTdjMmVhN2FiMzk0MC5qcGVnP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDIyMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAyMjNUMTQwNzU3WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9MTBkZTNhODg1NjA1Y2YyMjcxNDEzZmQyN2ViM2ZiOTAyYjY4NGNkOTgwMzcxZmEyMzJkZWU2NmYyYzM0MzgyNiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.Br0AaGA5VYDIh8TyZP2mM2fMlhvqQ6p-NyEXXzks1RI" content-type-secured-asset="image/jpeg">
+</div>
+<h3><a id="user-content-doh" class="anchor" aria-hidden="true" tabindex="-1" href="#doh"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>DoH</h3>
+<p>پروتکلی است که DNS را بر بستر HTTPS ارائه می‌دهد. یعنی درخواست‌های DNS در قالب وب ارسال می‌گردد.</p>
+<h3><a id="user-content-dot" class="anchor" aria-hidden="true" tabindex="-1" href="#dot"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>DoT</h3>
+<p>در این پروتکل درخواست‌های DNS بر اساس پروتکل TCP ارسال می‌گردد.</p>
+<h3><a id="user-content-dou" class="anchor" aria-hidden="true" tabindex="-1" href="#dou"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>DoU</h3>
+<p>در این پروتکل درخواست‌های DNS بر اساس پروتکل UDP ارسال می‌گردد.</p>
+<h2><a id="user-content-settings" class="anchor" aria-hidden="true" tabindex="-1" href="#settings"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Settings</h2>
+<p>در این صفحه تنظیمات کلی نرم‌افزار قرار دارد که در ادامه توضیح داده خواهند شد.</p>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260462052-989d8fce-4858-4bd1-b5fb-44c4bdac3895.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDYyMDUyLTk4OWQ4ZmNlLTQ4NTgtNGJkMS1iNWZiLTQ0YzRiZGFjMzg5NS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMDNkYTljYmZmOTVhZWYzZTgzODZkZWE5NzZkNDE3ZjdlMmI2MzAxZDY2YWMwYWEwN2IzYjQ3NTBlNDFlZDAwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.JIsjfmCwgIhN8wJwfGlvYSRkDCG6zFdpQ681u8OOx_I" content-type-secured-asset="image/png">
+</div>
+<h3><a id="user-content-import-configuration" class="anchor" aria-hidden="true" tabindex="-1" href="#import-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Import Configuration</h3>
+<p>برای افزودن فایل کانفیگ‌ها از دستگاه به صورت دستی از این گزینه استفاده نمایید.</p>
+<h3><a id="user-content-export-configuration" class="anchor" aria-hidden="true" tabindex="-1" href="#export-configuration"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Export Configuration</h3>
+<p>برای انتقال کانفیگ ایمپورت شده از دستگاه به دستگاهی دیگر از این گزینه می‌توان استفاده نمود.</p>
+<h3><a id="user-content-subscription" class="anchor" aria-hidden="true" tabindex="-1" href="#subscription"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Subscription</h3>
+<p>با فعال کردن گزینه <code>Update On Open</code> ، هنگام باز شدن نرم‌افزار به صورت خودکار سابسکریپشن آپدیت می‌گردد.</p>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260464146-068a0d24-c0f5-4cfd-9fa0-e37eb50acf20.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDY0MTQ2LTA2OGEwZDI0LWMwZjUtNGNmZC05ZmEwLWUzN2ViNTBhY2YyMC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03Y2JiODkxMjlkZTJkMGMwZDFkOGYwZjRmMGNhODQ2Njg4OTljNDUwMDM2M2UyYjBjOTc3NWEwODJhZTJmNTlkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Qbbp57Rh9c7yWEeQDEIvI32Hbh0_C-LHshYQUARTqtQ" content-type-secured-asset="image/png">
+</div>
+<h3><a id="user-content-reset" class="anchor" aria-hidden="true" tabindex="-1" href="#reset"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>Reset</h3>
+<p>در این بخش می‌توانید تنظیمات مربوط به اپلیکیشن را ریست نمایید.</p>
+<div align="center">
+<img width="30%" src="https://private-user-images.githubusercontent.com/125398461/260462885-8b336b0b-0c57-49e7-89e4-f86317955061.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjYwNDYyODg1LThiMzM2YjBiLTBjNTctNDllNy04OWU0LWY4NjMxNzk1NTA2MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT04MjQ0ZGY2MDQ4ZWVkY2JjYThkYzY5NDI2ZTE4OWY3NjhiNjU4Yjk3NzIwODYyMWUyNjE5M2MzYmM4NzJjMzI1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.Rp7jZZhF-ySEBsd0BQq62x0lovqv48klPSYGvmHeJPU" content-type-secured-asset="image/png">
+</div>
+<h2><a id="user-content-فعالسازی-فرگمنت" class="anchor" aria-hidden="true" tabindex="-1" href="#فعالسازی-فرگمنت"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a>فعال‌سازی فرگمنت</h2>
+<p>برای فعال‌سازی فرگمنت روی کانکشن‌های TLS می‌بایست در این نرم‌افزار روی کانکشن بزنید و گزینه Fragment را فعال کنید.
+پارامترهای زیر برای تعیین در فیلدهای مربوطه پیشنهاد می‌شود.</p>
+<div align="center">
+<img src="https://private-user-images.githubusercontent.com/125398461/295794447-055f8437-0bfa-45ce-96e4-f7cbd0026c4c.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDg2OTc1NzcsIm5iZiI6MTcwODY5NzI3NywicGF0aCI6Ii8xMjUzOTg0NjEvMjk1Nzk0NDQ3LTA1NWY4NDM3LTBiZmEtNDVjZS05NmU0LWY3Y2JkMDAyNmM0Yy5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjIzJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIyM1QxNDA3NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lMTcxMDMyMjUyN2ExMTFmODliMGZlN2I1MzUzOWMxOTQzZmM2MTc4Njk3YWJjMTc5NGJhMDQzY2EzN2Y0YTRmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ORZM_GZ5rpvLbWPcuJXxJPolzkdTVOMyxUWw7j6kwhQ" width="30%" content-type-secured-asset="image/jpeg">
+</div>
+<div dir="ltr">
+<p><code>packets: tlshello</code></p>
+<p><code>length : 100-200</code></p>
+<p><code>interval : 10-20</code></p>
+</div>
+<p>بسته به اپراتور ممکن است نیاز باشد پارمترها را تغییر دهید یا نوع پکت‌ها را از tlshello به حالت <code>tcp segment 1-3</code> تغییر دهید. البته این حالت ممکن است زودتر شناسایی شود.
+<code>packets: 1-3</code></p>
+</div>
+              </div>
